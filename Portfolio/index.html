@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norinne Gabrielle Piamonte | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <style>
+        .btn:hover{
+            transform:translateY(-2px);
+            box-shadow:0 0 20px rgba(127,90,240,.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">NGP</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end"
+                id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <a href="https://github.com/gabriellep-bit" target="_blank" class="btn github-btn ms-lg-3">
+                   GitHub <i class="fab fa-github me-2"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-8 head">
+                    <h4>Hello, I'm</h4>
+
+                    <h1 class="display-2 fw-bold head">
+                        Norinne
+                        <span class="gradient-text">Gabrielle</span> Piamonte
+                    </h1>
+
+                    <h2 class="mb-4 head">
+                        UI/UX Designer & Frontend Developer
+                    </h2>
+
+                    <p class="hero-text">
+                        Hi, I’m Norinne Gabrielle Piamonte. I design clean, modern interfaces and build responsive websites with a focus on user experience and functionality.
+                    </p>
+
+                    <div class="mt-4">
+                        <a href="#projects" class="btn btn-gradient me-3">
+                            View Projects
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline-light">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <div class="social-icons mt-4">
+                        <a href="https://github.com/gabriellep-bit" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/norinne-gabrielle-piamonte-933006413/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/gbrlle.nrinne" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <h1><hr></h1>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+
+            <h5 class="section-title">ABOUT ME</h5>
+            <h2 class="mb-4 head">Who Am I?</h2>
+
+            <div class="row g-4 align-items-center">
+
+                <div class="col-lg-6">
+                    <p class="about-text">
+                        Hello! I'm <strong>Norinne Gabrielle Piamonte</strong>, a BSIT student with a strong passion for UI/UX design and frontend development. I enjoy creating clean, modern, and user-centered interfaces that focus on both visual design and user experience.
+                    </p>
+
+                    <p class="about-text">
+                        I specialize in designing intuitive layouts and building responsive websites using modern web technologies. I also have basic knowledge of backend development, which allows me to understand how both frontend and backend work together in creating functional web applications.
+                    </p>
+
+                    <p class="about-text">
+                        I am continuously improving my skills in both design and development, with the goal of building seamless and meaningful digital experiences.
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about-card">
+                        <div class="about-item">
+                            <h3>🎓 <h5>BS Information Technology</h5></h3>
+                        </div>
+
+                        <div class="about-item">
+                            <h3>💻</h3>
+                            <h5>Web Development</h5>
+                        </div>
+
+                        <div class="about-item">
+                            <h3>🚀</h3>
+                            <h5>System Development</h5>
+                        </div>
+
+                        <div class="about-item">
+                            <h3>📚</h3>
+                            <h5>Continuous Learning</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding">
+        <div class="container">
+
+            <h5 class="section-title">SKILLS</h5>
+            <h2 class="mb-5 head">My Skills</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="fab fa-html5" style="color: #E34F26;"></i>
+                        <h5>HTML</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt" style="color: #1572B6;"></i>
+                        <h5>CSS</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="fab fa-js" style="color: #F7DF1E;"></i>
+                        <h5>JavaScript</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="fab fa-bootstrap" style="color: #7952B3;"></i>
+                        <h5>Bootstrap</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="fab fa-laravel" style="color: #FF2D20;"></i>
+                        <h5>Laravel</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="fab fa-java" style="color: #ED8B00;"></i>
+                        <h5>Java</h5>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+
+            <h5 class="section-title">PROJECTS</h5>
+            <h2 class="mb-5 head">Featured Projects</h2>
+
+            <div class="row g-4">
+
+                <!-- Project 1 -->
+                <div class="col-lg-4">
+                    <div class="project-card p-4 h-100">
+
+                        <h4>Classroom Reservation System</h4>
+
+                        <p class="project-overview">
+                            A web-based reservation platform that allows
+                            students and faculty to check classroom
+                            availability and submit reservation requests
+                            efficiently.
+                        </p>
+
+                        <div class="mb-3">
+                            <span class="badge bg-primary">Laravel</span>
+                            <span class="badge bg-secondary">Bootstrap</span>
+                            <span class="badge bg-success">MySQL</span>
+                        </div>
+
+                        <a href="https://github.com/gabriellep-bit/Classroom-Reservation-System"
+                            target="_blank"
+                            class="repo-link">
+                            <i class="fab fa-github" style="color: #fff;"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4">
+                    <div class="project-card p-4 h-100">
+
+                        <h4>Portfolio Website</h4>
+
+                        <p class="project-overview">
+                            A personal portfolio website designed to
+                            showcase my skills, projects, achievements,
+                            and contact information with a modern UI.
+                        </p>
+
+                        <div class="mb-3">
+                            <span class="badge bg-primary">HTML</span>
+                            <span class="badge bg-info">CSS</span>
+                            <span class="badge bg-warning text-dark">
+                                JavaScript
+                            </span>
+                        </div>
+
+                        <a href="https://github.com/gabriellep-bit/Portfolio"
+                            target="_blank"
+                            class="repo-link">
+                            <i class="fab fa-github" style="color: #fff;"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4">
+                    <div class="project-card p-4 h-100">
+
+                        <h4>Community e-Portal</h4>
+
+                        <p class="project-overview">
+                            A web application that serves as a digital
+                            platform for barangay officials to access
+                            resources, submit requests, and stay
+                            informed about local events and services.
+                        </p>
+
+                        <div class="mb-3">
+                            <span class="badge bg-secondary">Bootstrap</span>
+                            <span class="badge bg-danger">PHP</span>
+                            <span class="badge bg-success">Laravel</span>
+                            <span class="badge bg-success">MySQL</span>
+                        </div>
+
+                        <a href="https://github.com/gabriellep-bit/communitye-portal"
+                            target="_blank"
+                            class="repo-link">
+                            <i class="fab fa-github" style="color: #fff;"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container text-center my-4">
+            <p class="mb-2" style="color:#cbd5e1;">Want to see more of my work?</p>
+            <a href="https://github.com/gabriellep-bit?tab=repositories" target="_blank" class="btn btn-gradient">
+                View more projects on GitHub <i class="fab fa-github ms-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+
+            <h5 class="section-title">CONTACT</h5>
+            <h2 class="mb-5 head">Get In Touch</h2>
+
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <p>
+                        Have a project or collaboration in mind?
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope"> </i>
+                         norinnegabriellepiamonte@email.com
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"> </i>
+                         +63 909 669 6830
+                    </p>
+                </div>
+
+                <div class="col-lg-8">
+
+                    <form id="contact-form">
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text"
+                                    class="form-control"
+                                    placeholder="Name">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <input type="email"
+                                    class="form-control"
+                                    placeholder="Email">
+                            </div>
+                        </div>
+
+                        <textarea
+                            class="form-control mb-3"
+                            rows="5"
+                            placeholder="Message"></textarea>
+
+                        <button class="btn btn-gradient" type="submit">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
+        © 2026 Norinne Gabrielle. All Rights Reserved.
+    </footer>
+
+    <script>
+        emailjs.init("PHqJqry51WFgKCBeo");
+    </script>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(e) {
+        e.preventDefault(); // stop page reload
+
+        emailjs.sendForm(
+            "service_b49ijg6",    // Gmail connection
+            "template_cld9hvv",   // Email template
+            this                 // form data
+        ).then(() => {
+
+            alert("Message sent successfully!");
+
+            this.reset(); // clear form after sending
+
+        }, (error) => {
+
+            alert("Failed to send message");
+            console.log(error);
+
+        });
+
+        });
+    </script>
+</body>
+</html>
